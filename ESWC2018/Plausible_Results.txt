@@ -1,0 +1,70 @@
+Question: What causes Katayama Fever?
+Sequence of Plausible Patterns: {SIM}
+Supporting Semantics: (obo:schistosomiasis japonica obo:hasExactSynonym obo:Katayama_fever)
+Plausbily rewritten query:
+	Select ?s where
+	{ 	
+		?s semp:CAUSES semr:Schistosomiasis_japonica.
+	}
+Plausbily inferred answers (Acceptable): Antigens, Antibodies, Anti-Idiotypic, Schistosoma_mansonii_infection, Eosinophilia
+Plausbily inferred answers (Unacceptable): Growth_Factor, CETP_protein,_human|CETP, Submersion
+------------------------------
+Quesiton: Do statins cause diabetes?
+Sequence of Plausible Patterns: {SPEC, INTP}
+Supporting Semantics: (db:Pravastatin db:substructure db:Statins), (semr:Pancreatitis semp:PRECEDES semr:Diabetes), (semr:Diabetes semp:PRECEDES semr:Hyperglycemia)
+Plausbily rewritten query:
+ASK
+	{ 
+		semr:Pravastatin semp:CAUSES semr:Pancreatitis. 
+		semr:Pravastatin semp:CAUSES semr:Hyperglycemia.
+	}
+Plausbily inferred answers (Acceptable): Yes
+Plausbily inferred answers (Unacceptable): -
+-----------------------------
+Question: Can levothyroxine sodium cause insomnia?
+Sequence of Plausible Patterns: {AFORT, SPEC}
+Supporting Semantics: (semr:Shock semp:PRECEDES semr:Psychiatric_problem), (semr:Psychiatric_problem semp:CAUSES semr:Psychophysiological_Insomnia), (semr:Psychophysiological_Insomnia rdfs:subClassOf obo:Insomnia)
+Plausbily rewritten query:
+	ASK
+	{ 
+		semr:Levothyroxine_Sodium semp:CAUSES semr:Shock
+	}
+Plausbily inferred answers (Acceptable): Yes
+Plausbily inferred answers (Unacceptable): -
+---------------------------
+Question: Which antibodies cause Riedel thyroiditis?
+
+
+Select DISTINCT ?s ?p  where
+{ 	
+   ?s ?p semr:Thyroiditis .
+    ?s semp:ISA ?sp.
+    FILTER regex(lcase(str(?sp)), "antibody").
+}
+
+---------------------------
+Question: What is the cause of episodic ataxia type 6?
+
+select ?s where { 
+	?s semp:CAUSES semr:Isaacs_syndrome
+} 
+
+----------------------------
+Question: Is Herceptin of potential use in the treatment of prostate cancer?
+
+ASK
+{ semr:Herceptin semp:TREATS semr:Carcinoma.
+	semr:Carcinoma semp:PRECEDES semr:Malignant_Neoplasms.
+    semr:Malignant_Neoplasms semp:ISA semr:Prostate_cancer_metastatic.
+}
+
+----------------------------
+Question: What is the treatment of acute myocarditis ?
+
+SELECT ?s WHERE { ?s semp:TREATS semr:Septic_myocarditis_NOS. }
+
+
+SELECT ?s ?p ?o WHERE { 
+    ?s rdfs:subClassOf obo:DOID_820.
+    ?s rdfs:label ?o.
+}
