@@ -6,9 +6,11 @@ Plausbily rewritten query:
 	{ 	
 		?s semp:CAUSES semr:Schistosomiasis_japonica.
 	}
-Plausbily inferred answers (Acceptable): Antigens, Antibodies, Anti-Idiotypic, Schistosoma_mansonii_infection, Eosinophilia
-Plausbily inferred answers (Unacceptable): Growth_Factor, CETP_protein,_human|CETP, Submersion
+Plausbily inferred answers (Clinically Acceptable): semr:Antigens, semr:Antibodies, semr:Anti-Idiotypic, semr:Schistosoma_mansonii_infection, semr:Eosinophilia
+Plausbily inferred answers (Clinically Unacceptable): semr:Growth_Factor, semr:CETP_protein,_human|CETP, semr:Submersion
+
 ------------------------------
+
 Quesiton: Do statins cause diabetes?
 Sequence of Plausible Patterns: {SPEC, INTP}
 Supporting Semantics: (db:Pravastatin db:substructure db:Statins), (semr:Pancreatitis semp:PRECEDES semr:Diabetes), (semr:Diabetes semp:PRECEDES semr:Hyperglycemia)
@@ -18,9 +20,11 @@ ASK
 		semr:Pravastatin semp:CAUSES semr:Pancreatitis. 
 		semr:Pravastatin semp:CAUSES semr:Hyperglycemia.
 	}
-Plausbily inferred answers (Acceptable): Yes
-Plausbily inferred answers (Unacceptable): -
+Plausbily inferred answers (Clinically Acceptable): Yes
+Plausbily inferred answers (Clinically Unacceptable): -
+
 -----------------------------
+
 Question: Can levothyroxine sodium cause insomnia?
 Sequence of Plausible Patterns: {AFORT, SPEC}
 Supporting Semantics: (semr:Shock semp:PRECEDES semr:Psychiatric_problem), (semr:Psychiatric_problem semp:CAUSES semr:Psychophysiological_Insomnia), (semr:Psychophysiological_Insomnia rdfs:subClassOf obo:Insomnia)
@@ -29,42 +33,57 @@ Plausbily rewritten query:
 	{ 
 		semr:Levothyroxine_Sodium semp:CAUSES semr:Shock
 	}
-Plausbily inferred answers (Acceptable): Yes
-Plausbily inferred answers (Unacceptable): -
+Plausbily inferred answers (Clinically Acceptable): Yes
+Plausbily inferred answers (Clinically Unacceptable): -
+
 ---------------------------
+
 Question: Which antibodies cause Riedel thyroiditis?
-
-
-Select DISTINCT ?s ?p  where
-{ 	
-   ?s ?p semr:Thyroiditis .
-    ?s semp:ISA ?sp.
-    FILTER regex(lcase(str(?sp)), "antibody").
-}
+Sequence of Plausible Patterns: {GEN}
+Supporting Semantics: (semr:Riedel's_thyroiditis semp:ISA semr:Thyroid_Diseases.)
+Plausbily rewritten query:
+	Select ?s where
+	{ 	
+		?s semp:CAUSES semr:Riedel's_thyroiditis.
+	}
+Plausbily inferred answers (Clinically Acceptable): semr:Antibodies, semr:Antigens, semr:Proteins, semr:Autoantibodies, semr:Thyroglobulin_antibody
+Plausbily inferred answers (Clinically Unacceptable): -
 
 ---------------------------
+
 Question: What is the cause of episodic ataxia type 6?
-
-select ?s where { 
-	?s semp:CAUSES semr:Isaacs_syndrome
-} 
+Sequence of Plausible Patterns: {GEN, SIM}
+Supporting Semantics: (obo:episodic_ataxia_type_6 rdfs:subClassOf obo:episodic ataxia), (obo:episodic_ataxia obo:hasExactSynonym obo:Isaacs syndrome)
+Plausbily rewritten query:
+	Select ?s where
+	{ 	
+		?s semp:CAUSES semr:Isaac's_syndrome.
+	}
+Plausbily inferred answers (Clinically Acceptable): semr:Antibodies, semr:Proteins, semr:Antibodies_Anti-Idiotypic, semr:Functional_disorder5, semr:Autoimmune, semr:Neuropathy, semr:Rare_Diseases, semr:Paraneoplastic_Syndromes, semr:Human_immunoglobulin, semr:Potassium_Channel, semr:Spasm, semr:Muscle_Cramp, semr:Myokymia, semr:Acquired_Neuromyotonia
+Plausbily inferred answers (Clinically Unacceptable): semr:Acetylcholinesterase, semr:Respiratory_complication, semr:SERCA1|ATP2A1, semr:Radiculopathy	
 
 ----------------------------
+
 Question: Is Herceptin of potential use in the treatment of prostate cancer?
-
-ASK
-{ semr:Herceptin semp:TREATS semr:Carcinoma.
-	semr:Carcinoma semp:PRECEDES semr:Malignant_Neoplasms.
-    semr:Malignant_Neoplasms semp:ISA semr:Prostate_cancer_metastatic.
-}
+Sequence of Plausible Patterns: {SPEC, AFORT}
+Supporting Semantics: (semr:Carcinoma semp:PRECEDES semr:Malignant_Neoplasms), (semr:Malignant_Neoplasms semp:ISA semr:Prostate Cancer)
+Plausbily rewritten query:
+	ASK
+	{ 	
+		semr:Herceptin semp:TREATS semr:Carcinoma.
+	}
+Plausbily inferred answers (Clinically Acceptable): Yes
+Plausbily inferred answers (Clinically Unacceptable): -
 
 ----------------------------
+
 Question: What is the treatment of acute myocarditis ?
-
-SELECT ?s WHERE { ?s semp:TREATS semr:Septic_myocarditis_NOS. }
-
-
-SELECT ?s ?p ?o WHERE { 
-    ?s rdfs:subClassOf obo:DOID_820.
-    ?s rdfs:label ?o.
-}
+Sequence of Plausible Patterns: {SIM}
+Supporting Semantics: (obo:septic myocarditis rdfs:subClassOf obo:Myocarditis), (obo:acute myocarditis rdfs:subClassOf obo:Myocarditis)
+Plausbily rewritten query:
+	SELECT ?s WHERE
+	{ 	
+		?s semp:TREATS semr:septic_myocarditis.
+	}
+Plausbily inferred answers (Clinically Acceptable): -
+Plausbily inferred answers (Clinically Unacceptable): rhodioloside
