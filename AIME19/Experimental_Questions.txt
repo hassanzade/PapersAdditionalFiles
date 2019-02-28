@@ -1,2 +1,122 @@
-test
-2
+Deductively answered:
+--------------------
+What causes Scurvy?
+What is known as the cause of subacute thyroiditis?
+Which viruses are best known to cause myocarditis?
+Which bacteria caused plague?
+Which pituitary adenoma is common cause of infertility in women?
+Which could be some of the possible causes of hypersomnia?
+Is valproic acid effective for glioblastoma treatment?
+What is the treatment of acute pericarditis?
+What is the treatment of subacute thyroiditis?
+Which disease can be treated with Delamanid?
+What are the treatments of choice for GIST (gastrointestinal stromal tumor)?
+What is the treatment of Riedel disease (thyroiditis)?
+Which drugs are utilized to treat eosinophilic esophagitis?
+What is the treatment of choice for gastric lymphoma?
+What is the treatment of neuropathic pain in children?
+Which acetylcholinesterase inhibitors are used for treatment of myasthenia gravis?
+Which is the most common cause of sudden cardiac death in young athletes?
+Which deficiency is the cause of restless leg syndrome?
+Mutation of which gene and which chromosome cause Neurofibromatosis type I?
+What organism causes tularemia?
+What is the cause of Tardive dyskinesia?
+Which is the main cause of the Patau syndrome?
+Which bacteria cause diphtheria?
+How is primary intestinal lymphangiectasia (PIL) caused?
+What fruit causes Jamaican vomiting sickness?
+Which virus type causes Molluscum contagiosum?
+Which are the main brain dysfunctions caused by hyperbilirubinemia?
+Which are the causes of the Koebner phenomenon?
+Which gene mutations cause the Marfan syndrome?
+Is propranolol used for treatment of infantile hemangioma?
+Is enzastaurin effective treatment of glioblastoma?
+Mutations in which gene cause Schimke immune-osseous dysplasia?
+Which disorder has been approved for treatment with Alk inhibitors?
+Can radius fracture cause carpal tunnel syndrome?
+Is cilengitide effective for treatment of glioblastoma? 
+What is the first line treatment for sarcoidosis?
+List 2 approved drug treatments for Inflammatory Bowel Disease (IBD).
+Which disease is treated with Fexinidazole?
+What organism causes scarlet fever also known as scarletina?
+Is subacute sclerosing panencephalitis caused by the Measles vaccine?
+What drug treatment can cause a spinal epidural hematoma?
+List diseases caused by protein glutamine expanded repeats.
+What causes leishmaniasis?
+Please list 10 conditions which play a role in causing atrial fibrillation.
+What drug treatment can cause a spinal epidural hematoma?
+Please list 3 diseases treated with Valtrex(valacyclovir)
+Which enzyme deficiency can cause GM1 gangliosidoses?
+What is the treatment of triiodothyronine toxicosis (T3_thyrotoxicosis)?
+List FDA approved treatments for androgenetic allopecia.
+List 4 drugs used to treat opioid addiction or overdose.
+Which drugs are utilized to treat eosinophilic esophagitis?
+Which drugs have been found effective for the treatment of chordoma?
+-----------------------------------------------------------------------------------------------------------
+Plausibly answered:
+---------------------
+What causes Katayama Fever?
+What is the cause of episodic ataxia type 6?
+Do statins cause diabetes?
+Can Levoxyl (levothyroxine sodium) cause insomnia?
+Which antibodies cause Riedel thyroiditis?
+Is the monoclonal antibody Trastuzumab (Herceptin) of potential use in the treatment of prostate cancer?
+What is the treatment of acute myocarditis?
+What is the genetic basis of the Delayed Sleep-Phase Syndrome (DSPS)?
+Does DDX54 play a role in DNA damage response?
+Does a tonsillectomy affect the patient's voice?
+Is there an RNAi drug being developed to treat amyloidosis?
+Are there RNAi approaches considered for the treatment of kidney injury?
+Has IVIG been tested in clinical trials for the treatment of Alzheimer's disease?
+Which bacteria causes erythrasma?
+Do bacteria from the genus Morexella cause respiratory infections?
+Was saracatinib being considered as a treatment for Alzheimer's disease in November 2017?
+Is celiac disease caused by gliadin-induced transglutaminase-2 (TG2)-dependent events ?
+Can doxycycline cause photosensitivity?
+What causes Black Lung?
+Can canagliflozin cause euglycemic diabetic ketoacidosis?
+Mutation of which gene causes arterial tortuosity syndrome?
+Can CD55 deficiency cause thrombosis?
+Which diseases are caused by mutations in Calsequestrin 2 (CASQ2) gene?
+List disorders that are caused by mutations in the mitochondrial MTND6 gene.
+What organism causes woolsorter's disease
+Which disease(s) are caused by HEX A deficiency?
+Is Brucella abortus the organism that causes brucillosis known to cause spontaneous abortions in humans?
+Are AAV vectors considered for the treatment of retinal dystrophies?
+Dinutuximab is used for treatment of which disease?
+What is the cause of Phthiriasis Palpebrarum?
+Orteronel was developed for treatment of which cancer?
+Matuzumab has been tested for treatment of which cancers?
+Is nivolumab used for treatment of Non-Small-Cell Lung Cancer?
+Is lambrolizumab effective for treatment of patients with melanoma ?
+Which diseases can be treated with Afamelanotide?
+List the diseases that can be treated using Vedolizumab.
+Is Migalastat used for treatment of Fabry Disease?
+Is ocrelizumab effective for treatment of multiple sclerosis?
+For the treatment of which conditions can atypical neuroleptic drugs be used?
+Is tretinoin effective for photoaging?
+Could Arimidex (anastrozole) cause hot flashes? (hot flushes)
+What is the definitive treatment for low pressure headache?
+-----------------------------------------------------------------------------------------------------------
+Remained unresolvable:
+---------------------
+Which are the main causes of fetal echogenic bowel?
+Can vitamin B1 deficiency cause encephalopathy?
+What causes erucism?
+Which gene-defect causes the Vel-blood type?
+What is the treatment of amiodarone-induced thyrotoxicosis?
+List all reported treatment options for anxiety in autism spectrum disorder.
+Dracorhodin perchlorate was tested for treatment of which cancers?
+Is armodafinil used for treatment of insomnia? (NO)
+Pridopidine has been tested for treatment of which disorder?
+Which disease is treated with Eliglustat?
+What is the treatment of interferon-induced thyroiditis?
+Which inherited disorder is known to be caused by mutations in the NEMO gene?
+What causes \"Puffy hand syndrome\"?
+What protein is the most common cause of hereditary renal amyloidosis?
+Centor criteria are used for which disease?
+Which personality disorder is treated using dialectical behavior therapy?
+Milwaukee protocol was tested for treatment of which disease?
+Does SARM1 deletion cause neurodegeneration?
+A bite from the Lone Star Tick Amblyomma americanum, can cause the victim to become allergic to red meat, yes or no?
+What is caused by the ectopic expression of CTCF?
